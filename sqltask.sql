@@ -42,11 +42,14 @@ INSERT INTO students_activated_courses  VALUES (202,'mary','python'),(203,'tim',
 
 INSERT INTO courses VALUES ('python'),('c++'),('javascript'),('Go'),('c#');
 
-
 -- fetch some values
-SELECT * FROM users right join codekata on codekata.rollNo = users.rollNo;
-SELECT users.student_name,company_drives.companies_attend FROM users left join company_drives on users.rollNo = company_drives.rollNo; 
-SELECT mentors_name FROM mentors;
-SELECT * FROM mentors;
-SELECT * FROM courses left join students_activated_courses on courses.course_name = students_activated_courses.in_active_course;
 
+SELECT * FROM users right join codekata on codekata.rollNo = users.rollNo;
+
+SELECT users.student_name,company_drives.companies_attend FROM users left join company_drives on users.rollNo = company_drives.rollNo; 
+
+SELECT mentors_name FROM mentors;
+
+SELECT * FROM mentors;
+
+SELECT * FROM courses left join students_activated_courses on courses.course_name = students_activated_courses.in_active_course;

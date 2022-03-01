@@ -1,4 +1,5 @@
 CREATE DATABASE students;
+
 USE students;
 
 -- create a table

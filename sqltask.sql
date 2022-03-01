@@ -4,23 +4,23 @@ USE students;
 
 -- create a table
 
-CREATE TABLE users (rollNo INT (10) primary key,student_name varchar(45), student_email varchar(40));
+CREATE TABLE users (rollNo INT (10) primary key,student_name varchar(45) NOT NULL, student_email varchar(40)NOT NULL);
 
-CREATE TABLE codekata (rollNo INT (10) primary key,problems_solved int(100));
+CREATE TABLE codekata (rollNo INT (10) primary key,problems_solved int(100)NOT NULL);
 
-CREATE TABLE attendance ( rollNo INT (10) primary key,attendance_in_percentage int(100));
+CREATE TABLE attendance ( rollNo INT (10) primary key,attendance_in_percentage int(100)NOT NULL);
  
-CREATE TABLE topics (topics varchar(40));
+CREATE TABLE topics (topics varchar(40)NOT NULL);
   
-CREATE TABLE task (rollNo INT (10) primary key,Tasks completed int(50));
+CREATE TABLE task (rollNo INT (10) primary key,Tasks completed int(50)NOT NULL);
    
-CREATE TABLE company_drives (rollNo INT (10) primary key,companies_attend int(50));
+CREATE TABLE company_drives (rollNo INT (10) primary key,companies_attend int(50)NOT NULL);
     
-CREATE TABLE mentors (mentors_name varchar(45) ,alotted_students int(10));
+CREATE TABLE mentors (mentors_name varchar(45) NOT NULL,alotted_students int(10)NOT NULL);
      
-CREATE TABLE students_activated_courses (rollNo INT (10) primary key,student_name varchar(45),in_active_course varchar(100));
+CREATE TABLE students_activated_courses (rollNo INT (10) primary key,student_name varchar(45),in_active_course varchar(100)NOT NULL);
       
-CREATE TABLE courses  (course_name varchar(45));
+CREATE TABLE courses  (course_name varchar(45)NOT NULL);
        
 -- insert some values
 
